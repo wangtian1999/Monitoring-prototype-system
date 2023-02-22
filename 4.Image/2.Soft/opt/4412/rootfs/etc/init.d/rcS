@@ -1,0 +1,16 @@
+#!/bin/sh 
+/bin/mount -a
+echo /sbin/mdev > /proc/sys/kernel/hotplug 
+/sbin/mdev -s
+
+#cd mjpg-streamer/
+#./start.sh &
+#cd ..
+#cd boa
+#./boa &
+#cd ..
+#cd drv/
+#insmod leddrv_dt.ko 
+#insmod mybeep.ko 
+#insmod fsadc.ko 
+#insmod fsmpu6050.ko 
