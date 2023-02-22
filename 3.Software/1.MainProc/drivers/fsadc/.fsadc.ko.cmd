@@ -1,0 +1,1 @@
+cmd_/home/linux/securitymonitor/drivers/fsadc/fsadc.ko := arm-linux-ld -EL -r  -T /home/linux/Linux_4412/kernel/linux-3.14/scripts/module-common.lds --build-id  -o /home/linux/securitymonitor/drivers/fsadc/fsadc.ko /home/linux/securitymonitor/drivers/fsadc/fsadc.o /home/linux/securitymonitor/drivers/fsadc/fsadc.mod.o
