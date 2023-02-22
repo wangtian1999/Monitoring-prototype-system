@@ -1,0 +1,4 @@
+kernel//home/wu/anfang_1/cgi/led_drv.ko
+kernel//home/wu/anfang_1/cgi/buzzer_drv.ko
+kernel//home/wu/anfang_1/cgi/adc_drv.ko
+kernel//home/wu/anfang_1/cgi/mpu6050_drv.ko

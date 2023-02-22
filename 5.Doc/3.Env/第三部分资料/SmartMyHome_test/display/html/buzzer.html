@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mpu6050</title>
+   <style>
+        * { margin: 0; padding: 0; }
+        html { height: 100%; }
+        body { height: 100%; background: #fff url(images/ledbg.jpg) 50% 50% no-repeat; background-size: cover;}
+		
+    </style>
+</head>
+<body>
+<center>
+	<form action="/cgi-bin/buzzer.cgi" method="get"> 
+        <table border="2" align="center" style="font-size:50px;" >
+		<td>蜂鸣器</td>
+		<td style="width:100px;" ><center>
+			<select name="buzzer" style="width:80px; height:30px">    
+							<option value="1">开</option>    
+							<option value="0">关</option>    
+
+			</select></center>
+			</td>	
+		
+		</table><button id="submit" style="width:100px;height:50px;">确认</button>
+	</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LED控制页面</title>
+   <style>
+        * { margin: 0; padding: 0; }
+        html { height: 100%; }
+        body { height: 100%; background: #fff url(images/ledbg.jpg) 50% 50% no-repeat; background-size: cover;}
+		.LED div{width:500px;height: 50px;border:2px solid #090}
+    </style>
+</head>
+<body>
+<center>
+    <table  border="2" style="font-size:50px;">
+	<tr>
+				<td colspan="2"  align="center">A9</td> 
+			</tr>
+	<form action="/cgi-bin/led.cgi" method="get"> 
+		<tr align="center">
+			<td style="width:200px;">Led2</td>
+			<td style="width:100px;" >
+			<select name="state2" style="width:50px;">    
+							<option value="">默认</option>   
+							<option value="12">开</option>    
+							<option value="00">关</option>    
+			</select>
+			</td>	
+		</tr>
+		<tr align="center">
+			<td>Led3</td>
+			<td>
+			<select name="state3" style="width:50px;">
+							<option value="">默认</option>   			
+							<option value="1">开</option>    
+							<option value="0">关</option>    
+
+			</select>
+		</tr>
+		<tr align="center">
+			<td>Led4</td>
+			<td>
+			 <select name="state4" style="width:50px;"> 
+							<option value="">默认</option>   			 
+							<option value="12">开</option>    
+							<option value="0">关</option>    
+
+			</select>
+			</td>
+		</tr>
+		
+		<tr align="center">
+			<td>Led5</td>
+			<td>
+			 <select name="state5" style="width:50px;">   
+							<option value="">默认</option>   			 
+							<option value="1">开</option>    
+							<option value="0">关</option>    
+
+			</select>
+			
+			</td>
+		</tr>
+		</tr>
+		</table>	
+
+				<button id="submit" style="width:100px;height:50px;">确认</button>
+			
+		</form>
+<center>
+</body>
+</html>

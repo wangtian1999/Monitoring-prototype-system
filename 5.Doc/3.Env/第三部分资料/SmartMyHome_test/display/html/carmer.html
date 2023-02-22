@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>监控</title>
+   <style>
+	  body{
+		     margin:0px;
+			 }
+		div#container{
+	     width:100%;
+		 height:100%;
+		 background-color:gray;
+		 }
+		 div#heading{
+		     width:100%;
+		     height:80px; 
+		     background-color:Plum ;}
+		 
+		 div#content_body{
+		     width:100%;
+		     height:650px;
+		     background-color:PeachPuff ;
+			 float:left;
+			 }
+		 div#kuang_jia{
+		     width:30%;
+		     height:550px;
+		     background-color:PeachPuff ;
+			 float:left;
+			 }
+		div#kuang{
+		     width:35%;
+		     height:550px;
+		     background-color:PeachPuff ;
+			 float:left;
+			 }
+		div#paizhao{
+		     width:35%;
+		     height:550px;
+		     background-color:PeachPuff ;
+			 float:left;
+			 }
+		div#p{
+		     width:35%;
+		     height:100px;
+		     background-color:PeachPuff ;
+			 float:left;
+			 }				 
+    </style>
+</head>
+<body>
+	  <div id="container">
+	            <div id="heading"><font size="7"> 
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+				监控</font><br/></div>
+			     
+		        <div id="content_body">
+					<div id="kuang_jia">&nbsp;</div>
+					<div id="kuang">
+					</br>
+					<p>室内</p>
+						<img src="http://192.168.0.103:8080?action=stream" width="" height="500px"> </img>
+	
+					
+					</div>
+				<div id="p">
+				<p> </p>
+				</div>
+				<div id="paizhao">
+				
+					<form action="" method="get"> 抓拍<br /><br /> 
+						<label><input name="carmer1" type="radio" value="1" />1</label> 
+						<a target ="_blank" href="http://192.168.0.103:8080?action=snapshot">确认</a>
+					</form>
+				</div>
+				</div>
+		   	 
+	     </div>
+	 
+</body>
+</html>

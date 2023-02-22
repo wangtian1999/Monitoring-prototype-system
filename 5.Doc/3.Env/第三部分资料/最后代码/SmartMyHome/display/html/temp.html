@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A9 和 Zigbee 传感器数据</title>
+   <style>
+	  body{
+		     margin:0px;
+			 }
+		div#container{
+	     width:100%;
+		 height:100%;
+		 background-color:gray;
+		 }
+		 div#heading{
+		     width:100%;
+		     height:80px; 
+		     background-color:Plum ;}
+		 
+		 div#content_body{
+		     width:100%;
+		     height:650px;
+		     background-color:PeachPuff ;
+			 float:left;
+			 }
+		 div#kuang_jia{
+		     width:33%;
+		     height:550px;
+		     background-color:PeachPuff ;
+			 float:left;
+			 }		 
+    </style>
+	 <script type="text/javascript">
+			 function showTime(){
+			 var t=new Date();
+			 var year = t.getFullYear();
+			 var month = t.getMonth();
+			 var day = t.getDate();
+			 var week = t.getDay();
+			 var arr=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+			 var hour = t.getHours();
+			 var minute = t.getMinutes();
+			 var second = t.getSeconds();
+			 var showTime = year+"/"+month+"/"+day+" " +arr[week]+
+			 " "+hour+((minute <10)?":0":":")+minute+((second<10)?":0":":")+second+((hour>12)?".pm":".am");
+			 document.getElementById("clock").value=showTime;
+			 }
+			 setInterval("showTime()",1000);
+			 </script>
+</head>
+<body>
+	  <div id="container">
+	            <div id="heading"><font size="7"> 
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+				A9 和 Zigbee 传感器数据</font><br/></div>
+			     <input type="text" id="clock" style="width:330px;height:30px;border:none;padding-right: 538px;padding-left: 650px;">
+		        <div id="content_body">
+					<div id="kuang_jia">&nbsp;</div>
+					<div id="kuang">
+					</br>
+					<p>now time</p>
+						<iframe src="/cgi-bin/refresh_env1.cgi" width="550px" height="555px"frameborder="1"
+								id="board"  scrolling="no">
+　　				
+　　					</iframe>
+					
+					</div>
+				</div>
+		   	 
+	     </div>
+	 
+</body>
+</html>
